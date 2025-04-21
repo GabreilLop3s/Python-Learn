@@ -8,3 +8,4 @@ def sum(*num):
         print(f"Soma é: {sumTotal}")
         
 sum(7,8,9,10,11)
+sum(78,5,7,5,1,6,9)
