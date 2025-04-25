@@ -21,3 +21,6 @@ __pycache__/
 !pythonlearn/
 __pycache__/
 *.pyc
+# Ignorar arquivos do OneDrive
+OneDrive/
+AppData/
