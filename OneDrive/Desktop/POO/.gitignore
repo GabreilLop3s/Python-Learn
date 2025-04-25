@@ -1,0 +1,16 @@
+# Ignore arquivos temporários do sistema
+*.log
+*.bak
+*.tmp
+
+# Ignorar pastas do sistema
+AppData/
+OneDrive/
+.vscode/
+.idea/
+
+# Ignorar arquivos do Python (cache)
+__pycache__/
+*.pyc
+
+# Outros arquivos específicos do seu projeto que não devem ser versionados
