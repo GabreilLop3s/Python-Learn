@@ -13,4 +13,9 @@ OneDrive/
 __pycache__/
 *.pyc
 
+
 # Outros arquivos específicos do seu projeto que não devem ser versionados
+# Ignorar todas as pastas que você não quer
+/*
+!POO/
+!pythonlearn/
