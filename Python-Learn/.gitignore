@@ -1,0 +1,17 @@
+# Ignorar tudo que não for código
+*.exe
+*.dll
+*.tmp
+*.log
+*.ini
+*.lnk
+*.url
+*.dat
+*.docx
+*.pdf
+*.mp3
+*.mp4
+node_modules/
+.vscode/
+*.pyc
+__pycache__/
