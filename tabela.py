@@ -8,7 +8,7 @@ cursor = conexao.cursor()
 # criando a tabela
 cursor.execute(
     """
-        CREATE TABLE filmes (
+        CREATE TABLE filmes(
             id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
             nome TEXT NOT NULL,
             ano INTEGER NOT NULL,
@@ -21,3 +21,4 @@ cursor.execute(
 #fecha a conexao
 conexao.close()
 print("Tabela foi criada")
+
