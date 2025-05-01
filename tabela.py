@@ -6,6 +6,7 @@ conexao =  sqlite3.connect('Titulo.db')
 cursor = conexao.cursor()
 
 # criando a tabela
+#PASSO 2 
 cursor.execute(
     """
         CREATE TABLE filmes(
