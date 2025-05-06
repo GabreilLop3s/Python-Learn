@@ -4,8 +4,8 @@ from sqlalchemy.ext.declarative import declarative_base #cria uma classe base da
 
 from sqlalchemy.orm import sessionmaker #cria uma classe base da qual todas as suas classes de modelo (que representam tabelas) devem herdar. Essa base contém metadados que permitem que o SQLAlchemy saiba como mapear suas classes para tabelas no banco.
 
-engine = create_engine("sqlite:///banco.db", echo=True)
-base = declarative_base()
+engine = create_engine("sqlite:///banco.db", echo=True) #conexao
+base = declarative_base() #base das classes
 
 class Filme(base):
      __tablename__ = "filmes"
@@ -14,16 +14,16 @@ class Filme(base):
      ano = Column(Integer, nullable=False)
      nota = Column(Float, nullable=False)
 
-# base.metadata.create_all(engine)
+base.metadata.create_all(engine)
 
-# #inserir dados 
-# def adcionar_filme(nome, ano, nota):
-#     Session = sessionmaker(bind=engine)
-#     session = Session()
-#     filme = Filme(nome=nome, ano=ano, nota=nota)
-#     session.add(filme)
-#     session.commit()
-#     session.close()
+ #inserir dados 
+def adcionar_filme(nome, ano, nota):
+     Session = sessionmaker(bind=engine)
+     session = Session()
+     filme = Filme(nome=nome, ano=ano, nota=nota)
+     session.add(filme)
+     session.commit()
+     session.close()
     
 def atualiza_filme(id, nome=None, ano=None, nota=None):
     Session = sessionmaker(bind=engine)
