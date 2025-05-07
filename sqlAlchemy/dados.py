@@ -28,3 +28,19 @@ def obter_dados():
     dados = cursor.fetchall()
     cursor.close()
     return dados 
+
+# 4 - excluir dados
+def excluir_dados(id):
+    conexao = conecta_bd()
+    cursor = conexao.cursor()
+    cursor.execute(
+        '''
+        DELETE FROM filmes
+        WHERE id = ?
+        ''',
+        (id,)
+    )
+    conexao.commit()
+    conexao.close()
+
+    

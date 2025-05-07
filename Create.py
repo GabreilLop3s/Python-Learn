@@ -8,7 +8,8 @@ cursor = conexao.cursor()
 cursor.execute( #cursor age como uma ponte entre o banco de dados e a IDE, como se você ligasse pra alguem o snal passa por algo antes de ser direcionado pra pessoa que deseja ligar
     """
             INSERT INTO filmes(nome, ano, nota)
-            VALUES('Sonic',2020, 8.0)
+            VALUES('Mario',2021, 8.5)
+        
     
     """
 )

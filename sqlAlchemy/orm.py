@@ -51,7 +51,7 @@ def excluir_filme(id):
     session.commit()
     session.close()
     
-excluir_filme(1)
+excluir_filme(3)
 
 
 

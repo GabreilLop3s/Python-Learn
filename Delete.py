@@ -6,7 +6,7 @@ cursor = conexao.cursor()
 
 
 # 2 - exclusão de dados
-id = (1,2)
+id = (3,4)
 cursor.execute(
     """
         DELETE FROM filmes 
